@@ -1,6 +1,7 @@
 body{
 	color: #d80000;
-	background-color: #282828;
+	background-color: #181818;
+	font-family: "calibri";
 }
 
 table{
@@ -11,9 +12,41 @@ table{
 
 .header{
 	border: 1px solid blue;
-	height: 100px;
+	height: 125px;
 }
 
 .left{
-	width: 100px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000000;
+}
+
+.logo{
+	width:250px;
+	height:125px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.title{
+	color: #FFFFFF;
+	font-size: 36px;
+	height: 125px;
+	display: table-cell;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.content{
+	background-color: #282828;
+	color: #FFFFFF;
+	font-size: 12px;
+	height: 600px;
+	display: table-cell;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
 }
