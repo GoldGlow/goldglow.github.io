@@ -1,5 +1,5 @@
 $(document).ready(function(){
   $("#intro").click(function(){
-    $(".content").load("intro.txt");
+    $(".content").load("pages/intro.txt");
   });
 });
