@@ -5,7 +5,7 @@ Remove goes a step further than Clear and deletes this whole tab.<br>
 <br>
 Load Scripts is the area you’ll most likely want to pay attention to, especially when working with pre-made scripts.<br>
 <br>
-<img src="images/image2.png"/><br>
+<img src="images/image2.png" style="width:885px;height:485;"/><br>
 <br>
 Here you’ll be able to see all Available Scripts that we have uploaded to the server, and what scripts you currently have loaded into this Script. Essentially, loading scripts into the current tab will mean they run along with whatever script you type into the text field of this tab. The arrow buttons will move either the selected script, or all scripts if you click a double arrow. Anything in the Loaded Scripts segment is what will be loaded into this tab’s script.<br>
 <br>
