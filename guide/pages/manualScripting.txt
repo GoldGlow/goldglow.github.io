@@ -1,0 +1,43 @@
+So. You’re delving into actually writing a script. It’s a tedious process to start, but once you learn it can be very rewarding. We’ll go through the basics you’ll need for most cases, and I’ll explain things in a way that you know what to interchange for different situations.<br>
+<br>
+<u>Functions and Events</u><br/>
+The core of the majority of your scripting will revolve around doing certain things when certain events happen. Do X when Y happens, etc.<br/>
+<br/>
+But.. How do we even do that? Well firstly you need to know what a Function is.
+Functions are essentially blocks of code, which fires whenever we tell the script to run said block of code. It’s almost like a recipe; You write the instructions for the script to follow inside our Function, that way whenever we tell the script to run said Function, it will go through those instructions and follow it step by step.
+Simple enough, but how do we actually go about defining a function and adding our ‘instructions’ for the script to read?<br/>
+<br/>
+I’ll show you an example and go through it;<br/>
+<img src="../images/image6.png"/><br/>
+Pretty straightforward, but possibly a bit confusing if you haven’t tried your hand at any sort of programming before. I’ll break it down.<br/>
+<br/>
+<span style="background-color:#00d800;">function</span> - this Keyword defines that this is a function. Self explanatory. But we follow this with whatever we want to name this function, so in this example we’ve named this function <span style="background-color:#0000d8;">example</span>. It’s important to note that these function names must not contain spaces. Spaces break up code, so we need to use dashes, underscores, or capitalization to make function or variable names more readable.<br/>
+<br/>
+The open and close parentheses <span style="background-color:#0000d8;">()</span> following our function’s name is where we tell our script if our function requires any arguments to be passed into it when it’s called. <br/>
+We’ll get into this a bit more later, but for now since this function doesn’t require any arguments, we’ll just leave the parentheses empty.<br/>
+<br/>
+Next we get to actually define what’s inside our function, which is what our curly brackets are for <span style="background-color:#0000d8;">{ }</span>. Anything between the opening and closing curly brackets after we’ve stated that we’re defining a function, will be the “contents” or “instructions” of our function. Without these curly brackets, our script has no way to tell when the function’s contents start and end.<br/>
+<br/>
+Within these curly brackets we finally write the instructions for our function to follow. We can do a lot inside functions, we can call other functions, set variables, etc. but since we haven’t touched those yet, we’ll simply call a built-in function as our only instruction inside this simple function. <br/>
+<span style="background-color:#00d800;">print</span> lets us write information into the Console that we saw on the Settings GUI, which can be handy for debugging. In this case, Print takes a single argument, which is a <span style="background-color:#d80000;">string</span>. A string is basically what we call Human Readable text, and is defined with quotation marks. Anything between two quotation marks will define a string, and as such by passing <span style="background-color:#d80000;">"Hello World!"</span> to print, we’ll end up with this;<br/>
+<img src="../images/image8.png"/><br/>
+So that’s pretty much the basics of defining a function. You may notice the semi-colon after we close out the Print function, but those aren’t *technically* necessary in Javascript, but I’d recommend using them just for safety, as they tell the script that we’re done with this particular instruction. Once we put all the instructions we want within our function, we close it out with a curly bracket and we’re done!.... Right?<br/>
+Well.. if we enable our script and close out of the GUI... nothing happens.<br/>
+It doesn’t even print the text like in my screenshot, what gives!?<br/>
+Well, we may have defined a function but our function is never called. That is to say, we tell the script <b>what</b> our function is, but we never tell it to actually <b>run</b> it. So we could just tell the script to run it like we tell it to run the Print function within ours, but then it’ll only run our function once when the script first runs. This is when we define <b>when</b> we want this function to be called, by using Events.<br/>
+Events are fired whenever certain things happen, varying between what your script is attached to. By defining our function with an Event as the name and taking an event argument, we can tell the script that we want to run this function whenever the given event occurs. For example;<br/>
+<img src="../images/image5.png"/><br/>
+By defining a new function called <span style="background-color:#0000d8;">interact</span>, that takes a single argument which we call <span style="background-color:#d800d8;">event</span> in this case, we tell the script that we wish to run any instructions inside this function whenever the Interact event is fired on our NPC. (When it’s right clicked)<br/>
+<br/>
+Essentially, CPNCs scripts will look for functions matching the name of a given event whenever an event fires, and runs that function with said event as an argument for use in the function. Events can be found on the <a href=http://www.kodevelopment.nl/minecraft/customnpcs/scripting>CNPC Scripting page.</a><br/>
+<br/>
+So in our example, we tell the script that whenever the <span style="background-color:#d800d8;">interact</span> event fires on our NPC, then we want it to run the <span style="background-color:#d800d8;">example</span> function we defined earlier. Now, when our Script is enabled and we right click our NPC, it should print our “Hello World” to the console! We did it!<br/>
+<br/>
+But what about that event argument we defined? What’s that about? Well, in this particular example I know that the Interact event allows us to access our NPC and the player right clicking it whenever it fires. So with some tweaks, we can print out the name of Our NPC and the Player right clicking it whenever it’s right clicked.<br/>
+<img src="../images/image3.png"/><br/>
+<br/>
+<img src="../images/image9.png"/><br/>
+To explain what I changed;<br/>
+I changed our  <span style="background-color:#0000d8;">example</span> function take an argument which we will call <span style="background-color:#d800d8;">event</span>, and then I pass the Interact Event into our example function whenever we call it. We can then use that particular Event to refer to the NPC and Player involved in the interaction, and in this case we print out their Names.<br/>
+<br/>
+You could simplify this and just move our instructions from our example function to our interact function, so we don’t need to call a separate function and pass along the argument, but it’s down to preference and organisation.

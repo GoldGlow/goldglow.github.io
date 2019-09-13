@@ -10,4 +10,7 @@ $(document).ready(function(){
   $("#scriptingGui").click(function(){
 	setPage("The Scripting GUI", "pages/scriptingGui.txt");
   });
+  $("#manualScripting").click(function(){
+	setPage("Manual Scripting<br/><span style=\"font-size:16px;\">(It's more intimidating than it really is)</span>", "pages/manualScripting.txt");
+  });
 });
