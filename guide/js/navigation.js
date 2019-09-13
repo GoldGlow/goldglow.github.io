@@ -1,5 +1,10 @@
+function setPage(title, page){
+	$(".title").load(title);
+	$(".content").load(page);
+}
+
 $(document).ready(function(){
   $("#intro").click(function(){
-    $(".content").load("pages/intro.txt");
+    setPage("Intro", "pages/intro.txt");
   });
 });
