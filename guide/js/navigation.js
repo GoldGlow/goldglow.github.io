@@ -5,6 +5,9 @@ function setPage(title, page){
 
 $(document).ready(function(){
   $("#intro").click(function(){
-    setPage("Intro", "pages/intro.txt");
+    setPage("Introduction", "pages/intro.txt");
+  });
+  $("#scriptingGui").click(function(){
+	setPage("The Scripting GUI", "pages/scriptingGui.txt");
   });
 });
