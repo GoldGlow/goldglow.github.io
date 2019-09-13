@@ -1,5 +1,5 @@
 function setPage(title, page){
-	$(".title").load(title);
+	$(".title").html(title);
 	$(".content").load(page);
 }
 
