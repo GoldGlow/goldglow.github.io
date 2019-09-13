@@ -1,1 +1,3 @@
-document.body = "Test"
+function test() {
+    document.body = "Test";
+}
