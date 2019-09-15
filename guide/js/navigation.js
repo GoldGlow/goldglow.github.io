@@ -58,7 +58,7 @@ $(document).ready(function(){
   $("#notification").click(function(){
 		setFunctionValues("dialogNotification", "notification");
   });
-  $("#losDialog").click(function((){
+  $("#losDialog").click(function(){
 		setFunctionValues("LoSDialog", "losDialog");
   });
   $("#blockDialog").click(function(){
