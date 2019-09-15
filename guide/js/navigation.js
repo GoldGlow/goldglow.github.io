@@ -31,7 +31,9 @@ $(document).ready(function(){
   $("#prewrittenFunctions").click(function(){
 	  setPage("Prewritten functions", "pages/prewritten.txt");
   });
-  $("#npcFunctions").click(function(){
+});
+
+$("#npcFunctions").click(function(){
 		toggleNPCFunctions();
   });
   $("#achievement").click(function(){
@@ -73,4 +75,3 @@ $(document).ready(function(){
   $("#blockModel").click(function(){
 		setFunctionValues("setBlockModel","blockModel");
   });
-});
