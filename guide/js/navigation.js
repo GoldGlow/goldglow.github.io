@@ -30,7 +30,7 @@ $(document).ready(function(){
   });
   $("#prewrittenFunctions").click(function(){
 	  $(".title").html("Prewritten functions");
-	  $(".content").load("pages/prewritten.txt",,function(responseText, textStatus, XMLHttpRequest){
+	  $(".content").load("pages/prewritten.txt",function(responseText, textStatus, XMLHttpRequest){
 		  $("#npcFunctions").click(function(){
 				toggleNPCFunctions();
 			});
