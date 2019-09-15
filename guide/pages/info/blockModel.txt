@@ -1,0 +1,4 @@
+This script is quite self-explanatory, as it allows to set a scripted block's model<br/>
+<br/>
+Parameters:<br/>
+blockModel: (String) the minecraft item id of the block you want to set.

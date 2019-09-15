@@ -1,0 +1,4 @@
+This function is the function used to have a dialog open when a NPC sees the player, the action only happens if the player hasn't read the dialog yet. While this dialog is mainly used along with the battle script, it can also be used for sneaking portions.<br/>
+<br/>
+Parameters:<br/>
+initDialog: (int) the dialog that's opened when the player is spotted by the NPC.

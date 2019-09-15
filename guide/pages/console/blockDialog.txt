@@ -1,0 +1,1 @@
+<span class="function-text">var</span> dialogId=<span class="int-text">0</span>

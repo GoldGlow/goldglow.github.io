@@ -1,0 +1,4 @@
+this script, when applied to a scripted block, opens a CNPCs dialog when you right click it.<br/>
+<br/>
+Parameters:<br/>
+dialogId: (int) the dialog's ID the window will open.

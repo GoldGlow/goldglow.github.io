@@ -1,0 +1,7 @@
+This is the script used to start battles with NPCs. It is important that this can <b>only start the battle, not detect the player walking in front of them</b>. Think when challenging a gym leader in the games. If you want to set a regular trainer, use the LoSDialog script along with this one.<br/>
+<br/>
+Parameters:<br/>
+initDialog: (int) the dialog of the id that's seen right before starting the battle.<br/>
+winDialog: (int) the id of the dialog shown when the player wins<br/>
+loseDialog: (int) the id of the dialog shown when the player loses<br/>
+team: (string) the team used by the npc.

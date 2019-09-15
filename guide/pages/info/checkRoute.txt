@@ -1,0 +1,1 @@
+This is another function that you probably won't touch, it's used to check if the player is changing routes. It uses the player in the event, and the position it was before the update, to see if the route changed. Should be used with the updatePos function.

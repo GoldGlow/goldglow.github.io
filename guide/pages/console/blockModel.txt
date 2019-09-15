@@ -1,0 +1,1 @@
+<span class="function-text">var</span> blockModel=<span class="string-text">"minecraft:dirt"</span>

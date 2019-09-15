@@ -1,0 +1,9 @@
+<span class="function-text">var</span> scriptId=<span class="int-text">0</span><br/>
+<span class="function-text">var</span> firstX=<span class="int-text">1</span><br/>
+<span class="function-text">var</span> firstY=<span class="int-text">2</span><br/>
+<span class="function-text">var</span> firstZ=<span class="int-text">3</span><br/>
+<span class="function-text">var</span> secondX=<span class="int-text">4</span><br/>
+<span class="function-text">var</span> secondY=<span class="int-text">5</span><br/>
+<span class="function-text">var</span> secondZ=<span class="int-text">6</span><br/>
+<span class="function-text">var</span> team1=<span class="string-text">"team 1 name"</span><br/>
+<span class="function-text">var</span> team2=<span class="string-text">"team 2 name"</span>

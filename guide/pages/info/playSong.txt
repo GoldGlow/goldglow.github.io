@@ -1,0 +1,4 @@
+This script isn't going to be used a lot by you. This script is pretty much used as a check to play the music to make sure it automatically changes when the song is set to something else and to loop when the song ends. It's really just used to update music.<br/>
+<br/>
+Parameters:<br/>
+event.player: the player affected. Shouldn't be changed, unless there's a very specific exception.

@@ -1,0 +1,1 @@
+checkRoute(event.player, lastPosX, lastPosY, lastPosZ);

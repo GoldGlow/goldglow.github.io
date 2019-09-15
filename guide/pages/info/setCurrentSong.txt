@@ -1,0 +1,5 @@
+This is a function that you'll probably appreciate if you know how to do manual scripting. This one changes the song listened to by the player, based on the resource location you give it.<br/>
+<br/>
+Parameters:<br/>
+event.player: it's going to be a classic at this point, the player affected by the event. It's not going to change 99.9% of the time.<br/>
+song: <span class="string-text">"string"</span> location of the song in the resource pack.

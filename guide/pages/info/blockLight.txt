@@ -1,0 +1,1 @@
+This function makes a scripted block a light source. There's no parameters for it, although it is possible to set the light to different intensities. If you're interested in that, I recommend getting more familiar with manual scripting.

@@ -1,0 +1,1 @@
+setCurrentSong(event.player, <span class="string-text">"song"</span>);

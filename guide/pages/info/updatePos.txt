@@ -1,0 +1,1 @@
+You probably won't be touching that function either, that one is used to update the player's last location. It's mainly used along with the route update code.

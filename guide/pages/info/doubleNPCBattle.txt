@@ -1,0 +1,14 @@
+This function has a lot of parameters, but don't be too intimidated, as it is easier to set than it seems! This function is used to set a battle between 2 npcs, in the same way we do Blue and May's battle at the beginning of the story. Here's the parameters that you need to set:<br/>
+<br/>
+Parameters:<br/>
+scriptId: (int) the dialog id that will cause the battle to start.<br/>
+firstX: (int) the x position of the first NPC battling.<br/>
+firstY: (int) the y position of the first NPC battling.<br/>
+firstZ: (int) the z position of the first NPC battling.<br/>
+SecondX: (int) the x position of the second NPC battling.<br/>
+SecondY: (int) the y position of the second NPC battling.<br/>
+SecondZ: (int) the z position of the second NPC battling.<br/>
+team1: (String) the team name the first NPC is going to be using.<br/>
+team1: (String) the team name the second NPC is going to be using.<br/>
+<br/>
+<b>IMPORTANT NOTE:</b> the teams have to be 1 pokemon each, since trainers can't battle anything other than trainers, we get around it by having 2 wild pokemon battle and the winner despawns on victory.

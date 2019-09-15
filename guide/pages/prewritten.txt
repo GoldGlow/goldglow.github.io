@@ -1,0 +1,33 @@
+So, you're looking to use the list of pre-defined scripts by Ryan and myself. To use the pre-written scripts, you've going to have to import them. If you don't know how to import scripts, go check the Scripting GUI section of the guide, which you can access using the navigation menu on the left.<br/>
+<br/>
+For all of the scripts you'll see, all you will have to do to use them is replace the variables in the fake console with what the instructions under it say.
+<br/>
+You are able to load multiple scripts at once, even in the same tab, and define the variables for both scripts in that tab. If the variables share the same name, it will be work with both scripts at once. Some of the scripts are set on purpose with that in mind, such as the LoSDialog and the createNPCBattle scripts.<br/>
+<br/>
+Below is the list of script files you can import. Click them to see what you can do with them. The NPCFunctions are a lot of different functions that are used to make manual scripting easier, so clicking it will show/hide the list of functions in the file, and clicking those will show you what you can do with them.<br/>
+<br/>
+<!-- list-->
+<ul>
+	<li><span id="npcFunctions">NPCFunctions.js</span>
+		<ul id="functionsList">
+			<li id="achievement">achievement</li>
+			<li id="playSong">playSong</li>
+			<li id="setCurrentSong">setCurrentSong</li>
+			<li id="checkRoute">checkRoute</li>
+			<li id="updatePos">updatePos</li>
+		</ul>
+		<li id="doubleNPCBattle">createDoubleNPCBattle</li>
+		<li id="npcBattle">createNPCBattle</li>
+		<li id="notification">dialogNotification</li>
+		<li id="losDialog">LoSDialog</li>
+		<li id="blockDialog">openBlockDialog</li>
+		<li id="repeatableQuest">repeatableQuestDialogs</li>
+		<li id="blockLight">setBlockLight</li>
+		<li id="blockModel">setBlockModel</li>
+	</li>
+</ul>
+<!-- end of list-->
+<h1 id="scriptTitle"></h1>
+<div class="console" style="width:60%; height:200px;" id="scriptConsole">
+</div>
+<div id="scriptInfo"></div>
