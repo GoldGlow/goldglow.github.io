@@ -29,51 +29,54 @@ $(document).ready(function(){
 	setPage("Manual Scripting<br/><span style=\"font-size:16px;\">(It's more intimidating than it really is)</span>", "pages/manualScripting.txt");
   });
   $("#prewrittenFunctions").click(function(){
-	  setPage("Prewritten functions", "pages/prewritten.txt");
+	  $(".title").html("Prewritten functions");
+	  $(".content").load("pages/prewritten.txt",,function(responseText, textStatus, XMLHttpRequest){
+		  $("#npcFunctions").click(function(){
+				toggleNPCFunctions();
+			});
+			$("#achievement").click(function(){
+				setFunctionValues("Achievement", "achievement");
+			});
+			$("#playSong").click(function(){
+				setFunctionValues("playSong", "playSong");
+			});
+			$("#setCurrentSong").click(function(){
+				setFunctionValues("setCurrentSong", "setCurrentSong");
+			});
+			$("#checkRoute").click(function(){
+				setFunctionValues("checkRoute", "checkRoute");
+			});
+			$("#updatePos").click(function(){
+				setFunctionValues("updatePos", "updatePos");
+			});
+			$("#doubleNPCBattle").click(function(){
+				setFunctionValues("createDoubleNPCBattle", "doubleNPCBattle");
+			});
+			$("#npcBattle").click(function(){
+				setFunctionValues("createNPCBattle", "npcBattle");
+			});
+			$("#notification").click(function(){
+				setFunctionValues("dialogNotification", "notification");
+			});
+			$("#losDialog").click(function(){
+				setFunctionValues("LoSDialog", "losDialog");
+			});
+			$("#blockDialog").click(function(){
+				setFunctionValues("openBlockDialog", "blockDialog")
+			});
+			$("#repeatableQuest").click(function(){
+				setFunctionValues("repeatableQuestDialogs","repeatableQuest");
+			});
+			$("#blockLight").click(function(){
+				setFunctionValues("setBlockLight","blockLight");
+			});
+			$("#blockModel").click(function(){
+				setFunctionValues("setBlockModel","blockModel");
+			});
+	  });
   });
 });
 
 $(document).on("change", ".content", function(){
-  $("#npcFunctions").click(function(){
-		toggleNPCFunctions();
-  });
-  $("#achievement").click(function(){
-		setFunctionValues("Achievement", "achievement");
-  });
-  $("#playSong").click(function(){
-		setFunctionValues("playSong", "playSong");
-  });
-  $("#setCurrentSong").click(function(){
-		setFunctionValues("setCurrentSong", "setCurrentSong");
-  });
-  $("#checkRoute").click(function(){
-		setFunctionValues("checkRoute", "checkRoute");
-  });
-  $("#updatePos").click(function(){
-		setFunctionValues("updatePos", "updatePos");
-  });
-  $("#doubleNPCBattle").click(function(){
-		setFunctionValues("createDoubleNPCBattle", "doubleNPCBattle");
-  });
-  $("#npcBattle").click(function(){
-		setFunctionValues("createNPCBattle", "npcBattle");
-  });
-  $("#notification").click(function(){
-		setFunctionValues("dialogNotification", "notification");
-  });
-  $("#losDialog").click(function(){
-		setFunctionValues("LoSDialog", "losDialog");
-  });
-  $("#blockDialog").click(function(){
-		setFunctionValues("openBlockDialog", "blockDialog")
-  });
-  $("#repeatableQuest").click(function(){
-		setFunctionValues("repeatableQuestDialogs","repeatableQuest");
-  });
-  $("#blockLight").click(function(){
-		setFunctionValues("setBlockLight","blockLight");
-  });
-  $("#blockModel").click(function(){
-		setFunctionValues("setBlockModel","blockModel");
-  });
+  
 })
