@@ -33,7 +33,8 @@ $(document).ready(function(){
   });
 });
 
-$("#npcFunctions").click(function(){
+$(document).on("change", ".content", function(){
+  $("#npcFunctions").click(function(){
 		toggleNPCFunctions();
   });
   $("#achievement").click(function(){
@@ -75,3 +76,4 @@ $("#npcFunctions").click(function(){
   $("#blockModel").click(function(){
 		setFunctionValues("setBlockModel","blockModel");
   });
+})
