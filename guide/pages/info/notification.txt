@@ -1,6 +1,6 @@
 This function sends a notification in the top-right corner, like when you're changing routes. The function works when the player closes a dialog.<br/>
 <br/>
-Parameters:<br/>
+<b>Parameters:</b><br/>
 dialogId: the dialog's ID where the achievement shows up.<br/>
 firstLine: the first line's text in the notification.<br/>
 secondLine: the second line's text in the notification.

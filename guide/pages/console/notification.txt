@@ -1,3 +1,3 @@
-<span class="function-text">var</span> dialogId=<span class="int-text">0</span><br/>
-<span class="function-text">var</span> firstLine=<span class="int-text">"First Line"</span><br/>
-<span class="function-text">var</span> secondLine=<span class="int-text">"Second Line"</span>
+<span class="function-text">var</span> dialogId=<span class="int-text">0</span>;<br/>
+<span class="function-text">var</span> firstLine=<span class="string-text">"First Line"</span>;<br/>
+<span class="function-text">var</span> secondLine=<span class="string-text">"Second Line"</span>;

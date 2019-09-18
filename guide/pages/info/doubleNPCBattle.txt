@@ -1,6 +1,6 @@
 This function has a lot of parameters, but don't be too intimidated, as it is easier to set than it seems! This function is used to set a battle between 2 npcs, in the same way we do Blue and May's battle at the beginning of the story. Here's the parameters that you need to set:<br/>
 <br/>
-Parameters:<br/>
+<b>Parameters:</b><br/>
 scriptId: (int) the dialog id that will cause the battle to start.<br/>
 firstX: (int) the x position of the first NPC battling.<br/>
 firstY: (int) the y position of the first NPC battling.<br/>

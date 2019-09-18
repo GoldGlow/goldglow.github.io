@@ -1,7 +1,7 @@
 The achievement function is meant to be used with manual scripting to work with events, just like the other functions in the npcfunctions.js file<br/>
 To find out when to use this function, check out the manual scripting section of the guide.<br/>
 <br/>
-Parameters:<br/>
+<b>Parameters:</b><br/>
 event.player: the player recieving the achievement. Most of the time it's going to be the player affected by the event here, but there might be cases where it would be a different player.<br/>
-firstLine: <span class="string-text">"string"</span> just like that, but by replacing the string part for the text you'd want to display on the first line<br/>
-secondLine: <span class="string-text">"string"</span> just like firstLine, but for the second line of the notification.
+firstLine: (string) just like that, but by replacing the string part for the text you'd want to display on the first line<br/>
+secondLine: (string) just like firstLine, but for the second line of the notification.

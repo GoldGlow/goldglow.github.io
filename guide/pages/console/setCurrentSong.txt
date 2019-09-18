@@ -1,1 +1,1 @@
-setCurrentSong(event.player, <span class="string-text">"song"</span>);
+setCurrentSong(event.player, <span class="string-text">"obscureobsidian:song"</span>);

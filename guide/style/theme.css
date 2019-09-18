@@ -123,4 +123,6 @@ ul{
 	display:none;
 }
 
-#scriptInfo
+#scriptInfo{
+	text-align:left;
+}

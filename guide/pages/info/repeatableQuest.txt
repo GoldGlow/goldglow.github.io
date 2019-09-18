@@ -1,6 +1,6 @@
 This is one of the more handy scripts for sidequests. This script allows you to set different dialogs for repeatable sidequests based on the state the quest is in.<br/>
 <br/>
-Parameters:<br/>
+<b>Parameters:</b><br/>
 beforeId: (int) the dialog id before the player starts the quest. The player might've completed the quest already, but it means that it's available again.<br/>
 duringId: (int) the dialog id shown when the player has that quest active. <br/>
 waitingId: (int) the dialog id for when the player has completed the quest, and the cooldown to repeat the quest hasn't finished yet.<br/>

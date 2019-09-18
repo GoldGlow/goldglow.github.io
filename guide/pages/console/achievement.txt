@@ -1,1 +1,1 @@
-achievement(event.player, <span class="string-text">"firstLine"</span>, <span="string-text">"secondLine"</span>);
+achievement(event.player, <span class="string-text">"firstLine"</span>, <span class="string-text">"secondLine"</span>);

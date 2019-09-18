@@ -1,0 +1,255 @@
+Welcome to one of the biggest sections of the Obscure Obsidian sidemod: custom inventories and custom shops!<br/>
+<br/>
+Custom inventories are the chest GUIs that we use for different things, including the phone, everywhere on the server. To create those, we use json files placed in the config section. Here's, as an example, what some of the phone menu's items look like:<br/>
+<br/>
+<div class="console" style="width:1000px;">
+&ensp;{<br/>
+&ensp;"rows":3,<br/>
+&ensp;"name":"PokeHelper",<br/>
+&ensp;"items":{<br/>
+&ensp;"slot3":[{<br/>
+&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;"id":"variedcommodities:bag",<br/>
+&ensp;&ensp;&ensp;&ensp;"Count":1,<br/>
+&ensp;&ensp;&ensp;&ensp;"tag":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"display":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Name":"§rBackpack",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Lore":[<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"§rExtra item storage inside your backpack!"<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;}	<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;"leftClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp Backpacks",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"rightClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp Backpacks",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"requirements": [<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"type": "PERMISSION",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value": "backpacks",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"override": "*"<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;},{<br/>
+&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;"id":"variedcommodities:bag",<br/>
+&ensp;&ensp;&ensp;&ensp;"Count":1,<br/>
+&ensp;&ensp;&ensp;&ensp;"tag":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"display":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Name":"§rBackpack",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Lore":[<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"§rExtra item storage inside your backpack!"<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;}	<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;"leftClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp Backpacks & sb create Pocket1 6 @dp & sb create Pocket2 6 @dp & lp users @dp permission set backpacks",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"rightClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp Backpacks & sb create Pocket1 6 @dp & sb create Pocket2 6 @dp & lp users @dp permission set backpacks",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;}],<br/>
+&ensp;&ensp;"slot5":[{<br/>
+&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;"id":"variedcommodities:diamond_dagger",<br/>
+&ensp;&ensp;&ensp;&ensp;"Count":1,<br/>
+&ensp;&ensp;&ensp;&ensp;"Damage":101,<br/>
+&ensp;&ensp;&ensp;&ensp;"tag":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"Unbreakable":1,<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"display":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Name":"§rSkin Change",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Lore":[<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"§rChange the skin of your PokeHelper!"<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;}	<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;"leftClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp SkinChange",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"rightClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp SkinChange",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;requirements": [<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"type": "PERMISSION",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value": "helperSkins",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"override": "*"<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;}],<br/>
+&ensp;&ensp;"slot11":[{<br/>
+&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;"id":"variedcommodities:car_key",<br/>
+&ensp;&ensp;&ensp;&ensp;"Count":1,<br/>
+&ensp;&ensp;&ensp;&ensp;"tag":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"display":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Name":"§rOU",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"Lore":[<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"§rGrab an OU to places",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"§ryou've visited before"<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;}	<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;"leftClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp QuickTransport",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"rightClickActions":[<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"actionType":"COMMAND",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"value":"cc @dp QuickTransport",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"closeInv":false<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;],<br/>
+&ensp;&ensp;&ensp;"requirements": [<br/>
+&ensp;&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"type": "DIALOG",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id": 8,<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"override": "*"<br/>
+&ensp;&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;&ensp;]<br/>
+&ensp;&ensp;}]<br/>
+&ensp;}<br/>
+</div>
+<br/>
+Now, I know that there's a lot of lines there, but a lot of it is repeated between those, they mostly cover different specific examples. Now, let's take a look at what the json file contains:<br/>
+<br/>
+rows: the amount of rows the inventory will have.<br/>
+name: the name of the inventory.<br/>
+items: the object containing the different slots and each of their items<br/>
+slotX: replace X for the slot placement (X being replaced for numbers between 0 and 9x the amount of rows -1)<br/>
+The next few fields are for inside the slot:<br/>
+item: inside the item section, you put the NBT data of the item that you want in there. There's good examples of a few there, but if you want more fields you can take care of, check <a href=https://minecraft.gamepedia.com/Chunk_format#Items_and_XP_Orbs>this link</a>.<br/>
+<b>left/rightClickActions:</b> the explanation of what they do is pretty self-explanatory, but how to do them isn't. Now here's how they work. Actions contain the fields action type, value, and closeInv, but can also contain a requirement<br/>
+actionType: the kind of action left/right clicking will do. There's currently the following action types:
+<ul>
+<li>COMMAND: runs the command given in the value field.</li>
+<li>GIVEITEM: goves an item to the player clicking the option. Can still be done using a command, it's mainly used for shops.</li>
+<li>CHANGESKIN: changes the phone's skin. The first argument in the value is the skin's damage ID (which can be found <a href="https://docs.google.com/spreadsheets/d/1aCji_yv2r-l-grVWscxDeQAeHeTTVMDeQmrWgpFUlak/edit#gid=0">here</a>) while everything after is the item's display name.</li>
+<li>OPEN_INV: opens an inventory, the inventory depending on the value.</li>
+<li>SEAL_SET: Sets a seal. Details coming soon.</li>
+</ul>
+value: depends on the action type.<br/>
+closeInv: if set to true, will close the inventory when clicking, will keep open if set to true.<br/>
+The last major point, which can be applied to an item, to an action, or at the inventory itself, is the requirement field. Requirements usually take 3 arguments, but might take 4. Here's what they are:<br/>
+type: the type of requirement. There's a few, here's what they include:<br/>
+<ul>
+<li>QUEST_STARTED: started a quest, and hasn't completed it yet. Takes id as a value, for the quest id.</li>
+<li>QUEST_FINISHED: finished a quest. Takes id as a value, for the quest id.</li>
+<li>DIALOG: after reading a dialog, based on the id value, representing the dialog id.</li>
+<li>PERMISSION: based on if the player has a permission or not. Takes value as an argument, representing the permission node.</li>
+<li>TIME: based on whether it's day or night time. Takes "day" or "night" as values.</li>
+<li>MONEY: based on whether the player has enough money or not. Takes id as the money amount. Mainly used for shops.</li>
+<li>ITEM: checks if the player has an itemstack in their inventory. Mainly used for shops. Takes the json value of the item stack as a value</li>
+</ul>
+value: the string values for the requirements. Only needed for certain requirement types.<br/>
+id: numbers used for some requirement types.<br/>
+override: a permission that allows to bypass requirements. Defaults to *.<br/>
+<br/>
+<h1>Shops</h1><br/>
+<br/>
+Shops are subcategories of custom inventories, but use a different format for the files, which are quite a bit more simple to handle. Here's what an example looks like<br/>
+<div class="console" style="width:1000px;">
+{<br/>
+&ensp;"name":"test",<br/>
+&ensp;"rows":1,<br/>
+&ensp;"items":{<br/>
+&ensp;&ensp;"slot1":[<br/>
+&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id":"pokemon:Vulpix",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"form":1<br/>
+&ensp;&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;&ensp;"buy":50<br/>
+&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;],<br/>
+&ensp;&ensp;"slot2":[<br/>
+&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id":"minecraft:dirt",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"Count":1<br/>
+&ensp;&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;&ensp;"buy":50<br/>
+&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;],<br/>
+&ensp;&ensp;"slot3":[<br/>
+&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id":"minecraft:dirt",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"Count":1<br/>
+&ensp;&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;&ensp;"sell":50<br/>
+&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;],<br/>
+&ensp;&ensp;"slot4":[<br/>
+&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id":"minecraft:dirt",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"Count":1<br/>
+&ensp;&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;&ensp;"buy":50,<br/>
+&ensp;&ensp;&ensp;&ensp;"buyOnly":true<br/>
+&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;],<br/>
+&ensp;&ensp;"slot5":[<br/>
+&ensp;&ensp;&ensp;{<br/>
+&ensp;&ensp;&ensp;&ensp;"item":{<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"id":"minecraft:dirt",<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;"Count":1<br/>
+&ensp;&ensp;&ensp;&ensp;},<br/>
+&ensp;&ensp;&ensp;&ensp;"buy":50,<br/>
+&ensp;&ensp;&ensp;&ensp;"sell":30<br/>
+&ensp;&ensp;&ensp;}<br/>
+&ensp;&ensp;]<br/>
+&ensp;}<br/>
+}
+</div>
+Most of the stuff in there is pretty obvious, although there's subtle differences between each, and I'll tell you what they are for each of the slots, since they all do things differently:<br/>
+<br/>
+<b>slot 1: the Pokémon</b><br/>
+This one shows a pokemon to sell. Since Pokémon aren't items, they'll take in the id section "pokemon" as the mod's origin. Form 1 means the first alternate form, so that would be selling Alolan Vulpix. Pokémon can only be bought with this, not sold.<br/>
+<br/>
+<b>slot 2: the buy, autosell</b><br/>
+This one shows dirt to be sold, with only buying price. This means that the selling price will be the default value, which is half of the buying price.<br/>
+<br/>
+<b>slot 3: the sell only</b><br/>
+This one shows a sell only option. The means that the player can't buy the item, only sell it. This is mainly useful for drop shops.<br/>
+<br/>
+<b>slot 4: the buy only</b><br/>
+This one looks very similar to slot 2, but it has an additional field, called buyOnly. As the name implies, it's for items that the player can only buy.<br/>
+<br/>
+<b>slot 5: the buy and sell</b><br/>
+The last one, shows buy and sell prices. It means that the buying price is defined, and the selling one is different from half of the buying one.
