@@ -40,4 +40,13 @@ But what about that event argument we defined? What’s that about? Well, in thi
 To explain what I changed;<br/>
 I changed our  <span style="background-color:#0000d8;">example</span> function take an argument which we will call <span style="background-color:#d800d8;">event</span>, and then I pass the Interact Event into our example function whenever we call it. We can then use that particular Event to refer to the NPC and Player involved in the interaction, and in this case we print out their Names.<br/>
 <br/>
-You could simplify this and just move our instructions from our example function to our interact function, so we don’t need to call a separate function and pass along the argument, but it’s down to preference and organisation.
+You could simplify this and just move our instructions from our example function to our interact function, so we don’t need to call a separate function and pass along the argument, but it’s down to preference and organisation.<br/>
+<br/>
+<u>Variables</u><br/>
+What the fuck is a Variable?<br/>
+Variables allow us to set text (Strings), numbers (Integers/Doubles/Floats), etc. to convenient objects we can reference at any time we need.<br/>
+<img src="images/image10.png"/><br/>
+As shown, we define a variable by using the var keyword, followed by the name of our new variable (in this case, example), after which we then define what the value of this variable is by using an equals sign followed by what we wish to assign to this variable, in this case a String (Text).<br/>
+Defining this variable lets us now reference and use this string from other places in our script as needed, so we don't have to copy/paste it a bunch of times if we want to use it more than once, nor do we need to edit multiple lines if we ever want to change something in this string, pretty handy! So by passing our new example variable into the print function, it's just the same as if we had written this string straight into our print function.<br/>
+Variables can also hold different types of numbers, or even other objects, like that event argument we used in our interact function. We can even re-define the value of our variable from another point in our code, if need be.<br/>
+Be warned though, any variables defined INSIDE a function, will only exist within the context of that instance of that function. For example, if we define a variable within our interact function, that variable will only be defined within interact, for that run of interact. If you need a variable to be accessible anytime, you're better off defining the variable outside a function and then modifying it's value within your functions as needed.
