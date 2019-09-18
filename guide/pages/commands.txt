@@ -1,0 +1,43 @@
+The sidemod adds a few commands. Quite a few probably aren't going to be used, but they'll still be listed in the off-chance, or in case you're curious.<br/>
+			<br/>
+			<table class="commandTable">
+			<tr>
+			<th>Command name</th><th>Command usage</th><th> Command description</th>
+			</tr>
+			<tr>
+			<td>battlereward</td><td>/battlereward [amount] [player]</td><td>Used for money rewards at the end of battles. Gives a notification about<br/>the amount won and multiplies the amount by 1.25x if it was done on hard difficulty.</td>
+			</tr>
+			<tr>
+			<td>CustomChest</td><td>cc [username] [chestname]</td><td>Opens a custom inventory to the player matching the chest name given as an argument.</td>
+			</tr>
+			<tr>
+			<td>Debug</td><td>/rvdebug</td><td>Ryan's debug command. Effects will vary, you will not understand.</td>
+			</tr>
+			<tr>
+			<td>Instanced Inventory</td><td>/instanceinv X Y Z</td><td>Effects will be changed soon possibly, considering that Instanced Inventories will likely change now.</td>
+			</tr>
+			<tr>
+			<td>Money Reward</td><td>/moneyreward [amount] [player]</td><td>Gives an amount of money to a player while giving them a notification.</td>
+			</tr>
+			<tr>
+			<td>Phone</td><td>/phone</td><td>Gives the player a phone. Will be fixed if deemed necessary.</td>
+			</tr>
+			<tr>
+			<td>Route Debug</td><td>/routedebug [on/off]</td><td>Sets whether the route debug scoreboard should be active or not.</td>
+			</tr>
+			<tr>
+			<td>Route Notification Option</td><td>/notification [player] [Option #]</td><td>Sets the player's route notification theme.</td>
+			</tr>
+			<tr>
+			<td>Scriptable</td><td>/scriptable x y z</td><td>If the block at the location is an apricorn/berry tree, or an AW item, they can become scripted if you right click them with a scripted item that has the script you want the block to run.</td>
+			</tr>
+			<tr>
+			<td>PVP Music Option</td><td>/pvpsong [player] [option]</td><td>Sets the options to listen the opponent's pvp theme. More details coming soon, when the system is revamped.</td>
+			</tr>
+			<tr>
+			<td>Set Theme</td><td>/theme [wild|trainer|pvp] [player] [song]</td><td>Changes a player's wild, trainer, or pvp theme based on the options picked.</td>
+			</tr>
+			<tr>
+			<td>Custom Shop</td><td>/cshop [player] [shopname]</td><td>Opens a custom shop to a player.</td>
+			</tr>
+			</table>

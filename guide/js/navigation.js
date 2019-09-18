@@ -77,5 +77,8 @@ $(document).ready(function(){
   });
   $("#shopsAndInventories").click(function(){
 	setPage("Shops and Inventories", "pages/inventories.txt");
-  })
+  });
+  $("#commands").click(function(){
+	setPage("Commands", "pages/commands.txt");
+  });
 });
