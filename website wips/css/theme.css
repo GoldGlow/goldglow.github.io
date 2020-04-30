@@ -1,0 +1,86 @@
+body {
+    background-color: #282828;
+}
+
+.navbar-brand{
+    width: 25%;
+}
+
+.logo{
+    margin-left: 25%;
+}
+
+.nav{
+    height: 60px;
+    background-color: #181818;
+}
+
+.center{
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+.title{
+    text-align:center;
+}
+
+.jumbotron{
+    background-color: #484848;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.nav-padding{
+    width: 15%;
+}
+
+.nav-item{
+    height: 60px;
+}
+
+.nav-link{
+    height: 60px;
+    line-height: 40px;
+    color: #8E2C9F;
+}
+
+.nav-link:hover{
+    color: #E735FF;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #8E2C9F;
+}
+
+.nav-pills .nav-link.active:hover{
+    background-color: #E735FF;
+}
+
+.card-header{
+    background-color: #181818;
+    color: #8E2C9F;
+}
+
+.btn-link{
+    color: #8E2C9F;
+}
+
+.btn-link:hover{
+    color: #E735FF;
+}
+
+.card-body{
+    background-color: #282828;
+}
+
+.card{
+    background-color: #282828;
+}
+
+.collapse{
+    background-color: #282828;
+    height: 100%;
+}
